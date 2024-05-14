@@ -14,28 +14,33 @@
                     <input type="text" name="show">
                 </div>
                 <div>
-                    <input type="button" value="AC">
-                    <input type="button" value="DE">
-                    <input type="button" value=".">
-                    <input type="button" value="/">
+                    <input class="pink-btn" type="button" value="AC" onclick="show.value = '' ">
+                    <input class="pink-btn" type="button" value="DE" onclick="show.value = show.value.toString().slice(0, -1) ">
+                    <input class="pink-btn" type="button" value="." onclick="show.value += '.' ">
+                    <input class="pink-btn" type="button" value="/" onclick="show.value += '/' ">
                 </div>
                 <div>
-                    <input type="button" value="7">
-                    <input type="button" value="8">
-                    <input type="button" value="9">
-                    <input type="button" value="*">
+                    <input class="vivid-btn" type="button" value="7" onclick="show.value += '7' ">
+                    <input class="vivid-btn" type="button" value="8" onclick="show.value += '8' ">
+                    <input class="vivid-btn" type="button" value="9" onclick="show.value += '9' ">
+                    <input class="pink-btn" type="button" value="*" onclick="show.value += '*' ">
                 </div>
                 <div>
-                    <input type="button" value="4">
-                    <input type="button" value="5">
-                    <input type="button" value="6">
-                    <input type="button" value="-">
+                    <input class="vivid-btn" type="button" value="4" onclick="show.value += '4' ">
+                    <input class="vivid-btn" type="button" value="5" onclick="show.value += '5' ">
+                    <input class="vivid-btn" type="button" value="6" onclick="show.value += '6' ">
+                    <input class="pink-btn" type="button" value="-" onclick="show.value += '-' ">
                 </div>
                 <div>
-                    <input type="button" value="1">
-                    <input type="button" value="2">
-                    <input type="button" value="3">
-                    <input type="button" value="+">
+                    <input class="vivid-btn" type="button" value="1" onclick="show.value += '1' ">
+                    <input class="vivid-btn" type="button" value="2" onclick="show.value += '2' ">
+                    <input class="vivid-btn" type="button" value="3" onclick="show.value += '3' ">
+                    <input class="pink-btn" type="button" value="+" onclick="show.value += '+' ">
+                </div>
+                <div>
+                    <input class="vivid-btn" type="button" value="00" onclick="show.value += '00' ">
+                    <input class="vivid-btn" type="button" value="0" onclick="show.value += '0' ">
+                    <input class="pink-btn equal operator" type="button" value="=" onclick="show.value = eval(show.value) ">
                 </div>
             </form>
 
